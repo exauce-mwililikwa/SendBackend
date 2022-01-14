@@ -9,26 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppController = void 0;
-const common_1 = require("@nestjs/common");
-const repo_service_1 = require("./repo.service");
-let AppController = class AppController {
-    constructor(reposervice) {
-        this.reposervice = reposervice;
-    }
-    async getHello() {
-        return `There are ${await this.reposervice.messageRepo.count()} existent messages`;
-    }
+const graphql_1 = require("@nestjs/graphql");
+let UserInput = class UserInput {
 };
 __decorate([
-    (0, common_1.Get)(),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", []),
-    __metadata("design:returntype", Promise)
-], AppController.prototype, "getHello", null);
-AppController = __decorate([
-    (0, common_1.Controller)(),
-    __metadata("design:paramtypes", [repo_service_1.default])
-], AppController);
-exports.AppController = AppController;
-//# sourceMappingURL=app.controller.js.map
+    (0, graphql_1.Field)(),
+    __metadata("design:type", String)
+], UserInput.prototype, "email", void 0);
+UserInput = __decorate([
+    (0, graphql_1.InputType)()
+], UserInput);
+exports.default = UserInput;
+//# sourceMappingURL=user.input.js.map

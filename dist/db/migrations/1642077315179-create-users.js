@@ -22,11 +22,17 @@ class createUsers1642077315179 {
                     isNullable: false,
                 },
                 {
+                    name: 'created_at',
+                    type: 'timestamptz',
+                    isNullable: false,
+                    default: 'now()',
+                },
+                {
                     name: 'updated_at',
                     type: 'timestamptz',
                     isNullable: false,
                     default: 'now()',
-                }
+                },
             ]
         });
     }

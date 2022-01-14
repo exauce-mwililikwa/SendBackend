@@ -36,6 +36,12 @@ private table=new Table({
         isNullable: false,
         default: 'now()',
     },
+    {
+        name: 'created_at',
+        type: 'timestamptz',
+        isNullable: false,
+        default: 'now()',
+    },
 
     ],
 });

@@ -23,10 +23,10 @@ __decorate([
     (0, graphql_1.Field)(),
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], Message.prototype, "title", void 0);
+], Message.prototype, "content", void 0);
 __decorate([
     (0, graphql_1.Field)(),
-    (0, typeorm_1.Column)({ name: 'author_id' }),
+    (0, typeorm_1.Column)({ name: 'user_id' }),
     __metadata("design:type", Number)
 ], Message.prototype, "userId", void 0);
 __decorate([

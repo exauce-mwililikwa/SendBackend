@@ -24,10 +24,10 @@ import {
   
     @Field()
     @Column()
-    title: string;
+    content: string;
   
     @Field()
-    @Column({name: 'author_id'})
+    @Column({name: 'user_id'})
     userId: number;
   
     @Field()

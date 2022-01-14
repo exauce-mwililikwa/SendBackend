@@ -40,7 +40,7 @@ __decorate([
 ], User.prototype, "messageConnection", void 0);
 User = __decorate([
     (0, graphql_1.ObjectType)(),
-    (0, typeorm_1.Entity)()
+    (0, typeorm_1.Entity)({ name: 'users' })
 ], User);
 exports.default = User;
 //# sourceMappingURL=user.entity.js.map

@@ -39,6 +39,12 @@ class createMessages1642078041884 {
                     isNullable: false,
                     default: 'now()',
                 },
+                {
+                    name: 'created_at',
+                    type: 'timestamptz',
+                    isNullable: false,
+                    default: 'now()',
+                },
             ],
         });
         this.foreignKey = new typeorm_1.TableForeignKey({

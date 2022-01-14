@@ -19,19 +19,26 @@ export class createUsers1642077315179 implements MigrationInterface {
            isNullable:false,
         },
         {
+            name: 'created_at',
+            type: 'timestamptz',
+            isNullable: false,
+            default: 'now()',
+        },
+        {
             name: 'updated_at',
             type: 'timestamptz',
             isNullable: false,
             default: 'now()',
-        }
+        },
+       
      ]
  })
 
-    public async up(queryRunner: QueryRunner): Promise<void> {
+    public async up(queryRunner: QueryRunner): Promise<any> {
    await queryRunner.createTable(this.table);
     }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
+    public async down(queryRunner: QueryRunner): Promise<any> {
         await queryRunner.dropTable(this.table);
     }
 
